@@ -1,0 +1,49 @@
+File: ex4a.c
+ ========================================
+Written by: Rotem Kashani, ID = 209073352,   login = rotemkash
+            David Koplev, ID = 208870279 ,    login = davidkop
+
+The program is a file censoring tool.
+It accepts command-line arguments for a filename, a string to censor, and a
+replacement character. The program utilizes memory mapping to efficiently 
+search for occurrences of the specified string in the file and replaces them 
+with the given character. It then syncs the modified file to disk and releases 
+the memory mapping.
+
+input: 
+Filename: The name of the file that needs to be censored.
+String to Censor: The specific string that should be replaced or
+censored in the file.
+Replacement Character: The character that will be used to substitute 
+the censored string in the file.
+
+output:
+The program modifies the specified file by replacing occurrences of
+the given string with the provided replacement character, and then saves the 
+modified file to disk.
+
+Compile: gcc -Wall ex4a.c -o ex4a
+
+Run: ./ex4a "file name" "string to censor" "replacement character"
+
+File: ex4b.c
+ ========================================
+Written by: Rotem Kashani, ID = 209073352,   login = rotemkash
+            David Koplev, ID = 208870279 ,    login = davidkop
+
+This program gets a name of a file that exists in the same dirctory 
+and checks if there is a hard link or not.
+
+input: 
+file name
+
+output:
+if there is hard link, the output is "hard link found" and the name 
+of the file with hard link.
+if there isn't hard link, the output is "No hard link".
+
+
+Compile: gcc -Wall ex4b.c -o ex4b
+
+Run: ./ex4b "file name"
+
